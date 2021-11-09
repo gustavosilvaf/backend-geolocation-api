@@ -64,6 +64,7 @@ export class GeolocationService {
 
     const greaterDistance = {
       between: [last(consolidatedResult)?.to, last(consolidatedResult).from],
+      distance: last(consolidatedResult).distance,
     };
 
     return {
