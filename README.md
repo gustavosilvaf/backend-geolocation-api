@@ -48,7 +48,7 @@ $ npm run start:prod
 ## Swagger
 
 ```
- localhost/3000/api
+ localhost:3000/api
 ```
 
 ## Support
