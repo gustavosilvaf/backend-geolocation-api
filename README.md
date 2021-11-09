@@ -26,9 +26,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Requirements
+
+- node >= v14 ([install](https://nodejs.org/en/download/))
+
 ## Installation
 
 ```bash
+# Create a .env file
+$ cp .env.example .env
+
 $ npm install
 ```
 
