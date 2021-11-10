@@ -1,11 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import {
-  ArrayMinSize,
-  IsArray,
-  IsNotEmpty,
-  IsString,
-  ValidateNested,
-} from 'class-validator';
+import { ArrayMinSize, IsArray, IsNotEmpty, IsString } from 'class-validator';
 
 export class SendAddressDto {
   @ApiProperty({
@@ -13,8 +7,7 @@ export class SendAddressDto {
   })
   @IsNotEmpty()
   @IsArray()
-  @ValidateNested({ each: true })
-  @ArrayMinSize(1)
+  @ArrayMinSize(2)
   @IsString({ each: true })
   public addresses: string[];
 }
